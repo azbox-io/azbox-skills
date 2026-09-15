@@ -1,0 +1,12 @@
+{
+  "name": "azbox",
+  "owner": { "name": "AZbox", "url": "https://azbox.io" },
+  "plugins": [
+    {
+      "name": "azbox",
+      "source": "./",
+      "description": "Teaches your coding agent to integrate AZbox translations: Flutter SDK, translation files with azbox-cli, the REST API and CI.",
+      "version": "1.0.0"
+    }
+  ]
+}

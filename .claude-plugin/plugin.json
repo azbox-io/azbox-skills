@@ -1,0 +1,10 @@
+{
+  "name": "azbox",
+  "description": "Teaches your coding agent to integrate AZbox translations: Flutter SDK, translation files with azbox-cli, the REST API and CI.",
+  "version": "1.0.0",
+  "author": { "name": "AZbox", "url": "https://azbox.io" },
+  "homepage": "https://azbox.io/docs/api/skills/",
+  "repository": "https://github.com/azbox-io/azbox-skills",
+  "license": "MIT",
+  "keywords": ["azbox", "i18n", "l10n", "localization", "translations", "flutter"]
+}
