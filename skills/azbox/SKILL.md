@@ -40,7 +40,8 @@ not invent methods, packages or endpoints that are not listed here.
    iOS/Android, Laravel) → pull translations into files with `azbox-cli` and keep using
    the project's i18n library (i18next, next-intl, vue-i18n…).
    Read [references/cli-and-ci.md](references/cli-and-ci.md).
-3. **Runtime fetch from a server** (Node, Go, Python…) → call the REST API directly.
+3. **Runtime fetch from a server** → in Node, the `azbox-node` package (0.2.0 or newer;
+   0.1.x never worked). In Go, Python and the rest, call the REST API directly.
    Read [references/rest-api.md](references/rest-api.md).
 4. **A PHP website translated page by page** → `azbox/azbox-php` on Packagist.
    Read [references/php-websites.md](references/php-websites.md).

@@ -45,7 +45,27 @@ GET /v1/projects/{projectId}      # one project: name, type, languages
 
 A key tied to a project only sees that project.
 
-## Minimal Node example
+## Node: azbox-node
+
+Use `azbox-node` 0.2.0 or newer. Check `package.json`: 0.1.0 and 0.1.1 never worked
+against the API, so if you find one of them, upgrade instead of debugging it.
+
+```ts
+import { AzboxClient } from 'azbox-node'
+
+const client = new AzboxClient({
+  apiKey: process.env.AZBOX_API_KEY!,
+  projectId: process.env.AZBOX_PROJECT_ID!,
+  language: 'ES',
+})
+const es = await client.getTranslations() // { "home.title": "Bienvenido", … }
+const changed = await client.getTranslations({ afterUpdatedAt: lastSync })
+```
+
+It works with `import` and `require`, and in React Native. Errors are `AzboxError` with
+`status`. A project with no keywords returns an empty result, not an error.
+
+## Minimal example without a package
 
 ```ts
 const res = await fetch(
